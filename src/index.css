@@ -1,0 +1,62 @@
+/* src/index.css */
+
+/* Full-page background using Picsum random image */
+.app-wrapper {
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/1920/1080?random=1");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Fallback gradient background */
+.app-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+  z-index: -2;
+}
+
+/* Ensure base styling */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER gradient */
+header.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(79, 70, 229, 0.75),   /* #4f46e5 */
+    rgba(59, 130, 246, 0.75),  /* #3b82f6 */
+    rgba(6, 182, 212, 0.75)    /* #06b6d4 */
+  ) !important;
+  color: white;
+}
+
+
+/* FOOTER gradient */
+footer.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.75),    /* #0f172a */
+    rgba(30, 41, 59, 0.75),    /* #1e293b */
+    rgba(51, 65, 85, 0.75)     /* #334155 */
+  ) !important;
+  color: #f1f5f9;
+}
+
+/* Small text in footer becomes slightly brighter */
+footer.bg-gradient small {
+  color: #e2e8f0;
+}
+
+/* Text outline for better readability on any background */
+.title-stroke {
+  text-shadow:
+    -2px -2px 2px black,
+     2px -2px 2px black,
+    -2px  2px 2px black,
+     2px  2px 2px black;
+}
