@@ -23,15 +23,8 @@ A small React project that displays the current time, date, and weather for citi
 
 ---
 
-## Demo
-
-The project displays a grid of city cards. Each card contains:
-
-- City name
-- Country
-- Local time
-- Local date
-- Current weather with icon
+## Deployment on GitHub Pages
+>[https://sitoannguyen.github.io/time-weather-react/](https://sitoannguyen.github.io/time-weather-react/)
 
 ---
 
