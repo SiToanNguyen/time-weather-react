@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ClockCard from "./components/ClockCard";
 import { CITIES } from "./data/cities";
 import { TRANSLATIONS } from "./i18n";
@@ -9,13 +9,7 @@ const THEMES = [
 ];
 
 export default function App() {
-  const [lang, setLang] = useState(() => {
-    return localStorage.getItem("lang") || "en";
-  });
-
-  useEffect(() => {
-    localStorage.setItem("lang", lang);
-  }, [lang]);
+  const [lang, setLang] = useState("en");
 
   return (
     <div className="app-wrapper">
