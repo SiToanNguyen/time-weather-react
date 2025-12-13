@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getCountryName } from "../utils/countries";
 
 const WEATHER_TTL_MS = 10 * 60 * 1000;
 
@@ -101,7 +102,7 @@ export default function ClockCard({ id, name, tz, country, theme, lang, texts })
     <div className={`card text-white ${theme} bg-opacity-75 shadow-sm h-100`}>
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
-        <p className="card-text">{country}</p>
+        <p className="card-text">{getCountryName(country, lang)}</p>
         <p className="card-text display-6">{formatTime(now)}</p>
         <p className="card-text">{formatDateShort(now)}</p>
 
