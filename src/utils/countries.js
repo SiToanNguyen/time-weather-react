@@ -18,5 +18,9 @@ countries.registerLocale(vi);
  * @returns {string} Localized country name
  */
 export function getCountryName(code, lang = "en") {
+  if (!code || code.length !== 2) {
+    console.warn("Expected ISO country code, got:", code);
+    return code;
+  }
   return countries.getName(code, lang) || code;
 }
