@@ -20,7 +20,6 @@ export const CITIES = [
 
   // UTC-6
   { id: 'guatemala_city', name: 'Guatemala City', tz: 'America/Guatemala', country: 'GT', note: 'Always UTC-6' },
-  { id: 'mexico_city', name: 'Mexico City', tz: 'America/Mexico_City', country: 'MX', note: 'Shifts between UTC-6 / UTC-5 (rules may change)' },
 
   // UTC-5
   { id: 'bogota', name: 'Bogotá', tz: 'America/Bogota', country: 'CO', note: 'Always UTC-5' },
@@ -36,6 +35,7 @@ export const CITIES = [
 
   // UTC±0
   { id: 'accra', name: 'Accra', tz: 'Africa/Accra', country: 'GH', note: 'Always UTC±0' },
+  { id: 'london', name: 'London', tz: 'Europe/London', country: 'GB', note: 'Shifts between UTC±0 / UTC+1' },
 
   // UTC+1
   { id: 'lagos', name: 'Lagos', tz: 'Africa/Lagos', country: 'NG', note: 'Always UTC+1' },  
